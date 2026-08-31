@@ -1,9 +1,13 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google()
         mavenCentral()
-        gradlePluginPortal()
+        maven { url 'https://maven.firstinspires.org/repository/maven-releases/' }
     }
+}
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
 }
 
 include ':FtcRobotController'
