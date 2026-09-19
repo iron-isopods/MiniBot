@@ -1,6 +1,9 @@
 repositories {
     google()
     mavenCentral()
+    maven {
+        url = "https://repo.dairy.foundation/releases/"
+    }
 }
 
 dependencies {
